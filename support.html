@@ -1,60 +1,129 @@
 <!DOCTYPE html>
 <html lang="de">
-<head>
-  <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Support - SnaptagApp</title>
-        <style>
-            body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 800px; margin: 0 auto; padding: 40px 20px; color: #1c1c1e; line-height: 1.7; }
-                h1 { font-size: 2em; margin-bottom: 4px; color: #000; }
-                    h2 { font-size: 1.2em; margin-top: 28px; color: #333; border-bottom: 1px solid #eee; padding-bottom: 4px; }
-                        p, li { margin: 8px 0; }
-                            a { color: #007AFF; text-decoration: none; }
-                                .meta { color: #8e8e93; font-size: 0.9em; margin-bottom: 32px; }
-                                    nav { margin-bottom: 32px; }
-                                        nav a { margin-right: 16px; font-weight: 500; }
-                                            .contact-box { background: #f2f2f7; border-radius: 12px; padding: 20px 24px; margin-top: 24px; }
-                                                .faq-item { margin-bottom: 20px; }
-                                                    .faq-item strong { display: block; margin-bottom: 4px; color: #000; }
-                                                      </style>
-                                                      </head>
-                                                      <body>
-                                                        <nav><a href="index.html">Home</a><a href="privacy.html">Datenschutz</a><a href="support.html">Support</a></nav>
-                                                          <h1>Support</h1>
-                                                            <p class="meta">Wir helfen Ihnen gerne weiter.</p>
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Support - Snaptag</title>
+    <style>
+          * { box-sizing: border-box; margin: 0; padding: 0; }
+          body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; max-width: 780px; margin: 0 auto; padding: 40px 20px 60px; color: #1c1c1e; line-height: 1.75; background: #fff; }
+          header { display: flex; align-items: center; gap: 14px; margin-bottom: 36px; padding-bottom: 20px; border-bottom: 1px solid #e5e5ea; }
+          .logo { width: 52px; height: 52px; background: linear-gradient(135deg, #34c759, #30d158); border-radius: 12px; display: flex; align-items: center; justify-content: center; color: white; font-size: 24px; font-weight: 700; }
+          header h1 { font-size: 1.6em; font-weight: 700; }
+          header p { font-size: 0.9em; color: #8e8e93; }
+          nav { margin-bottom: 36px; display: flex; gap: 20px; }
+          nav a { color: #007AFF; text-decoration: none; font-weight: 500; font-size: 0.95em; }
+          h2 { font-size: 1.15em; font-weight: 700; margin-top: 36px; margin-bottom: 14px; color: #000; }
+          p { margin-bottom: 10px; color: #3a3a3c; }
+          .faq { border: 1px solid #e5e5ea; border-radius: 10px; overflow: hidden; margin-bottom: 20px; }
+          .faq-item { padding: 16px 18px; border-bottom: 1px solid #e5e5ea; }
+          .faq-item:last-child { border-bottom: none; }
+          .faq-item strong { display: block; margin-bottom: 6px; color: #000; }
+          .faq-item p { margin: 0; font-size: 0.94em; }
+          .badge { display: inline-block; background: #fff8e0; color: #a07800; border-radius: 6px; padding: 2px 8px; font-size: 0.78em; font-weight: 600; margin-left: 6px; vertical-align: middle; }
+          .contact-box { background: #f2fff5; border: 1px solid #34c759; border-radius: 12px; padding: 20px 24px; margin-top: 28px; }
+          .contact-box p { margin-bottom: 8px; }
+          .contact-box a { color: #007AFF; text-decoration: none; font-weight: 500; }
+          .ampel { display: flex; gap: 10px; margin: 14px 0; flex-wrap: wrap; }
+          .dot { padding: 8px 14px; border-radius: 20px; font-size: 0.9em; font-weight: 600; }
+          .dot.green { background: #e8f9ee; color: #1a7f37; }
+          .dot.yellow { background: #fef9e7; color: #9a6d00; }
+          .dot.red { background: #fdecea; color: #b91c1c; }
+          footer { margin-top: 48px; padding-top: 20px; border-top: 1px solid #e5e5ea; font-size: 0.85em; color: #8e8e93; }
+          footer a { color: #007AFF; text-decoration: none; }
+        </style>
+  </head>
+  <body>
+      <header>
+            <div class="logo">S</div>div>
+            <div>
+                    <h1>Snaptag</h1>
+                  <p>Support &amp; Hilfe</p>
+            </div>
+      </header>
+    <nav>
+          <a href="privacy.html">Datenschutz</a>a>
+          <a href="support.html">Support</a>a>
+    </nav>
 
-                                                              <h2>Haeufig gestellte Fragen</h2>
+      <p>Hier findest du Antworten auf die haeufigsten Fragen zu Snaptag.</p>
 
-                                                                <div class="faq-item">
-                                                                    <strong>Wie erstelle ich einen neuen Tag?</strong>
-                                                                        <p>Oeffnen Sie ein Foto, tippen Sie auf das Tag-Symbol und geben Sie Ihren Tag ein. Bestaetigen Sie mit dem Haken.</p>
-                                                                          </div>
+      <h2>Das Konzept</h2>
+      <p>Snaptag hilft dir, langfristig abzunehmen &mdash; ohne Kalorien zu zaehlen. Einmal am Tag bewertest du per Bauchgefuehl, wie du gegessen hast:</p>
+      <div class="ampel">
+            <div class="dot green">Defizit &mdash; Weniger gegessen</div>
+            <div class="dot yellow">Ausgeglichen &mdash; Normal gegessen</div>
+            <div class="dot red">Ueberschuss &mdash; Mehr gegessen</div>
+      </div>
+      <p>Dazu trackst du optional Bewegung und Stimmung. Die App erkennt Muster und liefert persoenliche Erkenntnisse.</p>
 
-                                                                            <div class="faq-item">
-                                                                                <strong>Werden meine Daten in der Cloud gespeichert?</strong>
-                                                                                    <p>Nein. Alle Daten bleiben ausschliesslich auf Ihrem Geraet.</p>
-                                                                                      </div>
-
-                                                                                        <div class="faq-item">
-                                                                                            <strong>Wie kann ich einen Tag loeschen?</strong>
-                                                                                                <p>Wischen Sie in der Tag-Ansicht auf einen Tag nach links und tippen Sie auf Loeschen.</p>
-                                                                                                  </div>
-
-                                                                                                    <div class="faq-item">
-                                                                                                        <strong>Welche iOS-Version wird benoetigt?</strong>
-                                                                                                            <p>SnaptagApp erfordert iOS 16.0 oder hoeher.</p>
-                                                                                                              </div>
-                                                                                                              
-                                                                                                                <div class="faq-item">
-                                                                                                                    <strong>Wie kann ich Fotos importieren?</strong>
-                                                                                                                        <p>Tippen Sie auf das Plus-Symbol und waehlen Sie Aus Fotobibliothek oder Foto aufnehmen.</p>
-                                                                                                                          </div>
-                                                                                                                          
-                                                                                                                            <h2>Kontakt</h2>
-                                                                                                                              <div class="contact-box">
-                                                                                                                                  <p>Haben Sie eine Frage? Wir freuen uns ueber Ihre Nachricht.</p>
-                                                                                                                                      <p><strong>E-Mail:</strong> <a href="mailto:support@snaptagapp.com">support@snaptagapp.com</a></p>
-                                                                                                                                          <p>Wir antworten in der Regel innerhalb von 1-2 Werktagen.</p>
-                                                                                                                                            </div>
-                                                                                                                                            </body>
-                                                                                                                                            </html>
+      <h2>Haeufige Fragen</h2>
+      <div class="faq">
+            <div class="faq-item">
+                    <strong>Wie trage ich einen neuen Tag ein?</strong>
+                  <p>Oeffne den Tab "Heute". Tippe auf einen der drei Ampel-Buttons. Optional: Bewegung und Stimmung auswaehlen, Notiz eintragen. Alles wird automatisch gespeichert.</p>
+            </div>
+          <div class="faq-item">
+                <strong>Kann ich vergangene Tage nachtragen?</strong>
+                <p>Ja. Gehe zum Tab "Kalender", tippe auf einen beliebigen Tag und bearbeite Ampel, Bewegung, Stimmung und Notiz direkt im Sheet.</p>
+          </div>
+          <div class="faq-item">
+                <strong>Was ist Snaptag Premium?</strong>
+                <p>Ein einmaliger Kauf (EUR 4,99), kein Abo. Premium schaltet frei: Trend-Analyse, Wochenprofil, Smart Insights, Gewichts-Chart, alle Gewichtseintraege, Apple Health Sync und PDF-Export.</p>
+          </div>
+          <div class="faq-item">
+                <strong>Wie aktiviere ich Apple Health? <span class="badge">Premium</span>span></strong>
+                <p>Einstellungen &rarr; "Apple Health verbinden". Snaptag liest und schreibt dann deine Gewichtsdaten. Du kannst den Zugriff jederzeit in den iOS-Einstellungen widerrufen.</p>
+          </div>
+          <div class="faq-item">
+                <strong>Wie stelle ich eine Erinnerung ein?</strong>
+                <p>Einstellungen &rarr; Erinnerungs-Toggle aktivieren &rarr; Uhrzeit auswaehlen. Du erhaeltst taeglich eine lokale Benachrichtigung.</p>
+          </div>
+          <div class="faq-item">
+                <strong>Wo werden meine Daten gespeichert?</strong>
+                <p>Ausschliesslich lokal auf deinem iPhone (SwiftData). Kein Server, keine Cloud, kein Tracking.</p>
+          </div>
+          <div class="faq-item">
+                <strong>Wie exportiere ich einen PDF-Bericht? <span class="badge">Premium</span>span></strong>
+                <p>Einstellungen &rarr; "PDF-Bericht exportieren". Der Bericht enthaelt Uebersicht, Statistiken, Diagramme und alle Eintraege.</p>
+          </div>
+          <div class="faq-item">
+                <strong>Wie loesche ich alle meine Daten?</strong>
+                <p>Einstellungen &rarr; "Alle Daten loeschen". Diese Aktion ist endgueltig. Alternativ: App deinstallieren.</p>
+          </div>
+          <div class="faq-item">
+                <strong>Wie stelle ich einen Kauf wieder her?</strong>
+                <p>Einstellungen &rarr; Upgrade &rarr; "Kauf wiederherstellen". Oder starte die App neu, bestehende Kaeufe werden automatisch erkannt.</p>
+          </div>
+          <div class="faq-item">
+                <strong>Onboarding erneut anzeigen?</strong>
+                <p>Einstellungen &rarr; "Ueber die App" &rarr; "Einfuehrung erneut anzeigen".</p>
+          </div>
+          <div class="faq-item">
+                <strong>Welche iOS-Version wird benoetigt?</strong>
+                <p>Snaptag erfordert iOS 26 oder neuer.</p>
+          </div>
+          <div class="faq-item">
+                <strong>Ist Snaptag eine medizinische App?</strong>
+                <p>Nein. Snaptag ersetzt keine aerztliche oder ernaehrungswissenschaftliche Beratung. Die App dient der persoenlichen Selbstwahrnehmung. Nutzung auf eigene Verantwortung.</p>
+          </div>
+      </div>
+  
+    <h2>Kontakt</h2>
+    <div class="contact-box">
+        <p>Noch eine Frage? Wir antworten in der Regel innerhalb von 1&ndash;2 Werktagen.</p>
+        <p><strong>E-Mail:</strong> <a href="mailto:stenzel.oskar@gmail.com">stenzel.oskar@gmail.com</a>a></p>
+    </div>
+  
+    <footer>
+          <p>Snaptag &mdash; <a href="privacy.html">Datenschutz</a>a> &middot; <a href="support.html">Support</a>a></p>
+    </footer>
+  </body>
+</html>html></p>
+    </footer></strong></p></p></strong>
+    </nav></p></h1>
+            </div>
+      </header>
+  </body>
+    </style></title>
+  </head>
